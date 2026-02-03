@@ -1,0 +1,5 @@
+com\st\home\uti\AppProperties.class
+com\st\home\jsf\HomeBean.class
+com\st\home\uti\AppContext.class
+com\st\home\uti\LoggerUtils.class
+com\st\home\uti\LoggerWrapper.class
