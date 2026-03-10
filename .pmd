@@ -897,10 +897,6 @@
             <ruleset>Code Style</ruleset>
         </rule>
         <rule>
-            <name>AvoidLiteralsInIfCondition</name>
-            <ruleset>Error Prone</ruleset>
-        </rule>
-        <rule>
             <name>AvoidTrailingComma</name>
             <ruleset>Error Prone</ruleset>
         </rule>

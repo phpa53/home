@@ -19,9 +19,11 @@ public final class AppProperties {
 	public static final String APP_NAME = "application.name";
 	public static final String APP_VERSION = "application.version";
 	public static final String APP_LABEL = "application.label";
+	public static final String KEYCLOAK_URL = System.getProperty("litho.keycloak.url");
 	public static final String HOME_URL = System.getProperty("litho.home.url");
 	public static final String FSM_URL = System.getProperty("litho.fsm.url");
-	public static final String KEYCLOAK_URL = System.getProperty("litho.keycloak.url");
+	public static final String ELITHO_URL = System.getProperty("litho.elitho.url");
+	public static final String QLITHO_URL = System.getProperty("litho.qlitho.url");
 	private static final String PROP_FILENAME = "/application.properties";
 	private static final AppProperties INSTANCE = new AppProperties();
 	private transient AbstractConfiguration appConfiguration;

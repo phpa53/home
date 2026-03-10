@@ -12,7 +12,7 @@ body {
 .deeplitho-shadow {
 	font-weight: bold;
 	font-size: 40px !important;
- 	text-shadow: 1px 1px yellow;
+ 	text-shadow: 1px 1px violet;
 }
 .top-banner {
     position: relative;
@@ -59,7 +59,7 @@ body {
     flex: 1;                    /* take remaining space */
     text-align: center;
     color: #ffffff;
-    font-size: 1.4rem;
+    font-size: 40px;
     font-weight: 600;
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
@@ -92,6 +92,58 @@ body {
     transition: background-image 1s ease;
 }
 
+.ui-menubar {
+	border: none !important;
+}
+.ui-menubar .ui-menu {
+    border: 0px solid #d0d0d0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    overflow: hidden;
+    background-color: transparent !important;
+}
+.ui-menubar, 
+.ui-menubar .ui-menu, 
+.ui-menubar .ui-widget-header {
+    background: transparent !important;
+}
+.ui-menubar .ui-menuitem-text {
+	font-size: 20px !important;
+	color: darkviolet !important;
+    font-weight: bold !important;
+}
+.home-menu .ui-menuitem-link:hover {
+    background: lavenderblush !important;
+}
+body .ui-menu .ui-menu-list .ui-menu-child {
+    background: transparent;
+}
+
+
+/*
+.home-menu .ui-menubar .ui-menuitem-link {
+    background: transparent !important;
+}
+.home-menu .ui-menu .ui-menu-list {
+    background: red !important;
+}
+.home-menu .ui-menuitem-link:hover {
+    background: azure !important;
+}
+.home-menu .ui-menuitem {
+    background: transparent !important;
+}
+.home-menu .ui-menuitem-link {
+    background: transparent !important;
+}
+
+.home-menu .ui-menuitem,
+.home-menu .ui-menuitem-link {
+    background: transparent;
+}
+
+
+/*
 .ui-menubar, 
 .ui-menubar .ui-menu, 
 .ui-menubar .ui-widget-header {
@@ -100,9 +152,7 @@ body {
     border: none !important;
     font-size:bold;
 }
-.ui-menubar .ui-menuitem-text {
-    font-weight: bold !important;
-}
+
 .ui-menu.ui-menubar>.ui-menu-list>.ui-menuitem>.ui-menuitem-link .ui-icon-triangle-1-s:last-child {
     display: none !important;
 }
@@ -114,5 +164,5 @@ body {
 }
 .home-menu .ui-menuitem-link:hover {
     background-color: azure !important;
-}
+}*/
 

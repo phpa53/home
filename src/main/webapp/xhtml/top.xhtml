@@ -48,15 +48,15 @@
 	<div class="card">
 	    <h:form>
 	        <p:growl id="messages"/>
-	        <p:menubar hideDelay="1000" styleClass="home-menu ml-2">
-	            <p:submenu label="Focus Spot Monitoring">
+	        <p:menubar hideDelay="1000" styleClass="home-menu ml-2" autoDisplay="false">
+	            <p:submenu label="Focus Spot Monitoring" styleClass="home-menu">
                     <p:menuitem value="Notification" url="#{homeBean.getFsmTabUrl(0)}"/>
                     <p:menuitem value="Alert Job" url="#{homeBean.getFsmTabUrl(1)}"/>
                     <p:menuitem value="Alert Recipe" url="#{homeBean.getFsmTabUrl(2)}"/>
-                    <p:menuitem value="History Lot" disabled="true"/>
-                    <p:menuitem value="History Wafer" disabled="true"/>
 	            </p:submenu>
-	            <p:submenu label="Q-Litho" styleClass="custom-submenu-icon">
+	            <p:submenu label="xLitho" styleClass="home-menu">
+                    <p:menuitem value="eLitho" url="#{homeBean.getElithoUrl()}"/>
+                    <p:menuitem value="q-litho" url="#{homeBean.getQlithoUrl()}"/>
 	            </p:submenu>
 	        </p:menubar>
 	    </h:form>

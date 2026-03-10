@@ -7,7 +7,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.st.litho</groupId>
 	<artifactId>home</artifactId>
-	<version>0.0.0-002</version>
+	<version>0.0.0-003</version>
 	<packaging>war</packaging>
     <name>home</name>
 	

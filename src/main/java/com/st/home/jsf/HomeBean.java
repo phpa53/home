@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 import com.st.home.uti.AppContext;
 import com.st.home.uti.AppProperties;
-import com.st.home.uti.LoggerWrapper;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.faces.view.ViewScoped;
@@ -25,33 +24,32 @@ import lombok.extern.slf4j.Slf4j;
 public class HomeBean implements Serializable {
 
 	private static final long serialVersionUID = -4670991962647880888L;
+	private String appLabel;
+	private String appVersion;
 	private String userName;
 	private String keycloakUrl;
 	private String homeUrl;
-	private String appLabel;
-	private String appVersion;
 	private String fsmUrl;
+	private String elithoUrl;
+	private String qlithoUrl;
 
 	@PostConstruct
 	public void init() {
 
-		this.userName = AppContext.getUserName();
-	    this.homeUrl = AppProperties.HOME_URL;
-	    this.keycloakUrl = AppProperties.KEYCLOAK_URL;
 	    this.appLabel = AppProperties.getAppLabel();
 	    this.appVersion = AppProperties.getAppVersion();
+		this.userName = AppContext.getUserName();
+	    this.keycloakUrl = AppProperties.KEYCLOAK_URL;
+	    this.homeUrl = AppProperties.HOME_URL;
 	    this.fsmUrl = AppProperties.FSM_URL;
+	    this.elithoUrl = AppProperties.ELITHO_URL;
+	    this.qlithoUrl = AppProperties.QLITHO_URL;
 
 	}
 
 	public String getFsmTabUrl(final int tab) {
-
-		final var url = String.format("%s/index.xhtml?tab=%d", this.fsmUrl, tab);
-
-		LoggerWrapper.info(log, String.format("Redirect to %s", url));
-
-		return url;
-
+		return String.format("%s/index.xhtml?tab=%d", this.fsmUrl, tab);
+		//LoggerWrapper.info(log, String.format("Redirect to %s", url));
 	}
 
 }
