@@ -15,12 +15,17 @@
         <p:outputPanel id="topBanner"
 	        styleClass="top-banner"
 	        style="background-image: url('#{resource['images/theme.jpg']}');">
-	        <p:tooltip for="@next" value="Go to Home page" showEffect="fade" hideEffect="fade" position="bottom"/>
-        	<p:link id="homeTopHomeLink"
-        		value="DEEPLITHO" 
-            	styleClass="banner-left deeplitho-shadow"
-            	style="text-decoration:none"
-        		href="#{homeBean.getHomeUrl()}"/>
+	        <h:panelGroup layout="block" styleClass="banner-left">
+		        <p:tooltip for="@next" value="Go to Home page" showEffect="fade" hideEffect="fade" position="bottom"/>
+	        	<p:link id="homeTopHomeLink"
+	        		value="DEEPLITHO" 
+	            	styleClass="banner-left deeplitho-shadow"
+	            	style="text-decoration:none"
+	        		href="#{homeBean.getHomeUrl()}"/>
+	        	<h:outputText value="INTEGRATION"
+	        		style="font-size:30px;font-weight:bold;color:chartreuse;margin-left:10px;margin-top:5px;"
+	        		rendered="#{homeBean.appEnv eq 'int'}"/>
+	        </h:panelGroup>
 	        <h:panelGroup layout="block" styleClass="banner-center">
 	            <h:outputText value="#{homeBean.appLabel}"/>
 	        </h:panelGroup>
@@ -55,8 +60,8 @@
                     <p:menuitem value="Alert Recipe" url="#{homeBean.getFsmTabUrl(2)}"/>
 	            </p:submenu>
 	            <p:submenu label="xLitho" styleClass="home-menu">
-                    <p:menuitem value="eLitho" url="#{homeBean.getElithoUrl()}"/>
-                    <p:menuitem value="q-litho" url="#{homeBean.getQlithoUrl()}"/>
+                    <p:menuitem value="eLitho" url="#{homeBean.elithoUrl}"/>
+                    <p:menuitem value="q-Litho" url="#{homeBean.qlithoUrl}"/>
 	            </p:submenu>
 	        </p:menubar>
 	    </h:form>

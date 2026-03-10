@@ -26,6 +26,7 @@ public class HomeBean implements Serializable {
 	private static final long serialVersionUID = -4670991962647880888L;
 	private String appLabel;
 	private String appVersion;
+	private String appEnv;
 	private String userName;
 	private String keycloakUrl;
 	private String homeUrl;
@@ -38,6 +39,7 @@ public class HomeBean implements Serializable {
 
 	    this.appLabel = AppProperties.getAppLabel();
 	    this.appVersion = AppProperties.getAppVersion();
+	    this.appEnv = AppProperties.APP_ENV;
 		this.userName = AppContext.getUserName();
 	    this.keycloakUrl = AppProperties.KEYCLOAK_URL;
 	    this.homeUrl = AppProperties.HOME_URL;

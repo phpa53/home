@@ -16,6 +16,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public final class AppProperties {
 
+	public static final String APP_ENV = System.getProperty("litho.app.env");
 	public static final String APP_NAME = "application.name";
 	public static final String APP_VERSION = "application.version";
 	public static final String APP_LABEL = "application.label";
